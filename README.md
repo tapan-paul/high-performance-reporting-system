@@ -168,6 +168,13 @@ Observability: Prometheus + Grafana
 Horizontal scaling with PostgreSQL
 
 dbt for analytical transformations
+
+While the current version focuses on high-performance data exports (CSV, JSON, XLSX), the system is architected to support **Human-Readable Templating** via a decoupled presentation layer.
+
+* **Data-to-Template Mapping**: The `ReportExporter` is designed to feed sanitized Pydantic schemas into templating engines like **Jinja2** or **ReportLab**.
+* **Decoupled Design**: By separating the raw data retrieval from the formatting logic, the system can generate branded HTML summaries or PDF invoices without modifying the core ingestion orchestrator.
+* **Extensibility**: To implement a new visual template, one simply needs to add a new `TemplateStrategy` to the Reporting Layer, ensuring the system remains OCP (Open-Closed Principle) compliant.
+
 ```
 🤖 AI-Assisted Development (AIDD)
 ```text
