@@ -1,20 +1,3 @@
-[
-  {
-    "external_id": "J-901",
-    "amount": 500.00,
-    "currency": "USD",
-    "source_channel": "JSON_FEED"
-  },
-  {
-    "external_id": "J-902",
-    "amount": 15.25,
-    "currency": "JPY",
-    "source_channel": "JSON_FEED"
-  },
-  {
-    "external_id": "BAD-DATA",
-    "amount": -100.00,
-    "currency": "USD",
-    "source_channel": "JSON_FEED"
-  }
-]
+{"external_id": "J-901", "amount": 500.00, "currency": "USD", "source_channel": "JSON_FEED"}
+{"external_id": "J-902", "amount": 15.25, "currency": "JPY", "source_channel": "JSON_FEED"}
+{"external_id": "BAD-DATA", "amount": -100.00, "currency": "USD", "source_channel": "JSON_FEED"}
